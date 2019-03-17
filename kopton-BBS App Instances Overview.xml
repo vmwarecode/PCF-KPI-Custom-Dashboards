@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Content>
+    <Views>
+        <ViewDef id="8560eb50-0208-4094-9d2b-bac2083679ab">
+            <Title>tkopton-BBS App Instances Overview</Title>
+            <Description>Shows following KPIs:
+- More App Instances than Expected
+- Fewer App Instances than Expected</Description>
+            <SubjectType adapterKind="PCF_ADAPTER" resourceKind="bbs" type="descendant"/>
+            <SubjectType adapterKind="PCF_ADAPTER" resourceKind="bbs" type="self"/>
+            <Usage>dashboard</Usage>
+            <Usage>report</Usage>
+            <Usage>details</Usage>
+            <Usage>content</Usage>
+            <Controls>
+                <Control id="time-interval-selector_id_24" type="time-interval-selector" visible="false">
+                    <Property name="advancedTimeMode" value="false"/>
+                    <Property name="unit" value="DAYS"/>
+                    <Property name="count" value="7"/>
+                </Control>
+                <Control id="attributes-selector_id_25" type="attributes-selector" visible="false">
+                    <Property name="attributeInfos">
+                        <List>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="BBS LRP|bbs_lrp_extra"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="PCF_ADAPTER"/>
+    <Property name="resourceKind" value="bbs"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="yellowBound" value="5"/>
+    <Property name="orangeBound" value="7"/>
+    <Property name="redBound" value="10"/>
+    <Property name="ascendingRange" value="false"/>
+    <Property name="displayName" value="More App Instances Than Expected"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="BBS LRP|bbs_lrp_extra_avg"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="PCF_ADAPTER"/>
+    <Property name="resourceKind" value="bbs"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="yellowBound" value="5"/>
+    <Property name="orangeBound" value="7"/>
+    <Property name="redBound" value="10"/>
+    <Property name="ascendingRange" value="false"/>
+    <Property name="displayName" value="More App Instances Than Expected Average"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="BBS LRP|bbs_lrp_missing"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="PCF_ADAPTER"/>
+    <Property name="resourceKind" value="bbs"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="yellowBound" value="5"/>
+    <Property name="orangeBound" value="7"/>
+    <Property name="redBound" value="10"/>
+    <Property name="ascendingRange" value="false"/>
+    <Property name="displayName" value="Fewer App Instances Than Expected"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="BBS LRP|bbs_lrp_missing_avg"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="PCF_ADAPTER"/>
+    <Property name="resourceKind" value="bbs"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="yellowBound" value="5"/>
+    <Property name="orangeBound" value="7"/>
+    <Property name="redBound" value="10"/>
+    <Property name="ascendingRange" value="false"/>
+    <Property name="displayName" value="Fewer App Instances Than Expected Average"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="BBS LRP|bbs_crashed_lrp"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="PCF_ADAPTER"/>
+    <Property name="resourceKind" value="bbs"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="yellowBound" value="1"/>
+    <Property name="orangeBound" value="2"/>
+    <Property name="redBound" value="5"/>
+    <Property name="ascendingRange" value="false"/>
+    <Property name="displayName" value="Crashed App Instances"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="BBS LRP|bbs_crashed_lrp_avg"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="PCF_ADAPTER"/>
+    <Property name="resourceKind" value="bbs"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="yellowBound" value="1"/>
+    <Property name="orangeBound" value="2"/>
+    <Property name="redBound" value="5"/>
+    <Property name="ascendingRange" value="false"/>
+    <Property name="displayName" value="Crashed App Instances Average"/>
+</Value>
+                            </Item>
+                            <Item>
+<Value>
+    <Property name="objectType" value="RESOURCE"/>
+    <Property name="attributeKey" value="BBS LRP|bbs_lrp_running"/>
+    <Property name="isStringAttribute" value="false"/>
+    <Property name="adapterKind" value="PCF_ADAPTER"/>
+    <Property name="resourceKind" value="bbs"/>
+    <Property name="rollUpType" value="NONE"/>
+    <Property name="rollUpCount" value="0"/>
+    <Property name="transformations">
+        <List>
+            <Item value="CURRENT"/>
+        </List>
+    </Property>
+    <Property name="isProperty" value="false"/>
+    <Property name="yellowBound" value="30"/>
+    <Property name="orangeBound" value="50"/>
+    <Property name="redBound" value="75"/>
+    <Property name="ascendingRange" value="false"/>
+    <Property name="displayName" value="Running App Instances"/>
+</Value>
+                            </Item>
+                        </List>
+                    </Property>
+                </Control>
+                <Control id="pagination-control_id_26" type="pagination-control" visible="true">
+                    <Property name="start" value="0"/>
+                    <Property name="size" value="50"/>
+                </Control>
+                <Control id="metadata_id_27" type="metadata" visible="false">
+                    <Property name="maxPointsCount" value="5000"/>
+                    <Property name="hideObjectNameColumn" value="false"/>
+                    <Property name="listTopResultSize" value="-1"/>
+                </Control>
+            </Controls>
+            <DataProviders>
+                <DataProvider dataType="list-view" id="list-view_id_23"/>
+            </DataProviders>
+            <Presentation type="list"/>
+        </ViewDef>
+    </Views>
+</Content>
